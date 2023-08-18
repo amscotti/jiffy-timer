@@ -1,0 +1,35 @@
+{
+  "name": "@amscotti/jiffy-timer",
+  "type": "module",
+  "engines": {
+    "node": "^18.16 || ^20.4"
+  },
+  "version": "1.0.0",
+  "description": "jiffy-timer is a high-precision, easy-to-use JavaScript timer library designed for measuring elapsed time. It offers a fluent API and can be used for performance tracking, benchmarking, or simply keeping time within your JavaScript applications.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "standard && ava",
+    "coverage": "c8 --all --reporter=html --reporter=text npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amscotti/jiffy-timer.git"
+  },
+  "keywords": [
+    "timer",
+    "performance",
+    "measurement",
+    "timing",
+    "elapsed-time",
+    "performance-timer",
+    "stopwatch"
+  ],
+  "author": "anthony.m.scotti@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "c8": "^8.0.1",
+    "standard": "^17.1.0"
+  }
+}

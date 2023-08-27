@@ -4,10 +4,13 @@
   "engines": {
     "node": "^18.16 || ^20.4"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "jiffy-timer is a high-precision, easy-to-use JavaScript timer library designed for measuring elapsed time. It offers a fluent API and can be used for performance tracking, benchmarking, or simply keeping time within your JavaScript applications.",
   "main": "index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
+    "check": "tsc --noEmit true",
+    "build": "tsc --emitDeclarationOnly true --noEmitOnError",
     "lint": "standard --fix",
     "test": "standard && ava",
     "coverage": "c8 --all --reporter=html --reporter=text npm test"
@@ -30,6 +33,7 @@
   "devDependencies": {
     "ava": "^5.3.1",
     "c8": "^8.0.1",
-    "standard": "^17.1.0"
+    "standard": "^17.1.0",
+    "typescript": "^5.2.2"
   }
 }

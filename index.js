@@ -55,13 +55,13 @@ export class Timer {
 
   /**
    * Calculates and gets the elapsed time.
-   * @throws {Error} If the timer has not been properly started or stopped.
+   * @throws {Error} If the timer has not been properly started.
    * @returns {number} The elapsed time in milliseconds.
    */
   elapsedTime () {
-    if (this.startTime === null || this.endTime === null) {
-      throw new Error('Timer has not been properly started or stopped.')
+    if (this.startTime === null) {
+      throw new Error('Timer has not been properly started.')
     }
-    return this.endTime - this.startTime
+    return (this.endTime || performance.now()) - this.startTime
   }
 }

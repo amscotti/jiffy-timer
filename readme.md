@@ -84,7 +84,7 @@ timer.reset()
 
 ### `elapsedTime()`
 
-Returns the elapsed time in milliseconds between start and stop calls. If the timer has not been started and stopped properly, it throws an error.
+Returns the elapsed time in milliseconds between start and stop calls. If not stopped, return the elapsed time for the current time. If the timer has not been started, it throws an error.
 
 Usage:
 ```javascript

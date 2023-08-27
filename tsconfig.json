@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "strict": true,
+        "checkJs": true,
+        "declaration": true,
+        "declarationDir": "types",
+        "lib": ["dom", "es2015"],
+    },
+    "include": ["**.js"],
+    "exclude": ["node_modules"]
+}
